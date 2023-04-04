@@ -77,8 +77,7 @@ They build multiple decision trees from randomly sampled rows and columns of the
 
 I have used flask framework to build a website and used AWS EC2 to deploy it. Please find the application link below.
 
-[Website link](ec2-65-1-1-208.ap-south-1.compute.amazonaws.com:8080)
-
+[Website link](http://ec2-65-1-1-208.ap-south-1.compute.amazonaws.com:8080/)
 ## Conclusion:
 
 After implementing 5 different models on the dataset I came to the conclusion that the data is too complex for linear regression and regularised regression to understand the patterns. One must use complex models like Random Forrest, and XGBoost to get better results. Hence, I used a random forest regressor. The best-performing model among the 4 linear models is Linear Regression. This makes sense because the model that we built was not overfitting in the first place.
