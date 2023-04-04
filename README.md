@@ -73,6 +73,12 @@ Random Forrest Regressor is used to predict the dependent variable which is cont
 How do they work?
 They build multiple decision trees from randomly sampled rows and columns of the dataset. This random sampling of the data is called bootstrap. After building multiple decision trees from the dataset they calculate the average of the values(in case of a regression problem) that have been predicted by all the decision trees. This process of calculating the average prediction by combining all the individual prediction values is called aggregation.
 
+## Deployed:
+
+I have used flask framework to build a website and used AWS EC2 to deploy it. Please find the application link below.
+
+[Website link](ec2-65-1-1-208.ap-south-1.compute.amazonaws.com:8080)
+
 ## Conclusion:
 
 After implementing 5 different models on the dataset I came to the conclusion that the data is too complex for linear regression and regularised regression to understand the patterns. One must use complex models like Random Forrest, and XGBoost to get better results. Hence, I used a random forest regressor. The best-performing model among the 4 linear models is Linear Regression. This makes sense because the model that we built was not overfitting in the first place.
