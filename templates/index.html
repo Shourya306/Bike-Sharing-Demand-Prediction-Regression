@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Count Prediction</title>
+</head>
+<body>
+    <h1>Bike Sharing Demand Prediction</h1>
+    <p><i>Please fill in the fields
+    </i></p>
+    <form action="/predict" method="post">
+        <label for="Month__8">Month__8</label>
+        <input type="number" id="Month__8" name="Month__8" min = "0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Hour">Hour</label>
+        <input type="number" id="Hour" name = "Hour" min = "0" max = "23" required step="1" required>
+        <br><br>
+        <label for="Is_Weekend">Is_Weekend</label>
+        <input type="number" name="Is_Weekend" id="Is_Weekend" min= "0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Month__12">Month__12</label>
+        <input type="number" id="Month__12" name="Month__12" min="0" max="1" required step="1" required>
+        <br><br>
+        <label for="Month__7">Month__7</label>
+        <input type="number" id="Month__7" name="Month__7" min="0" max="1" required step="1" required>
+        <br><br>
+        <label for="Month__11">Month__11</label>
+        <input type="number" id="Month__11" name="Month__11" min="0" max="1" required step="1" required>
+        <br><br>
+        <label for="Season__Winter">Season__Winter</label>
+        <input type="number" id="Season__Winter" name="Season__Winter" min="0" max="1" required step="1" required>
+        <br><br>
+        <label for="Month__10">Month__10</label>
+        <input type="number" id="Month__10" name="Month__10" min="0" max="1" required step="1" required>
+        <br><br>
+        <label for="Visibility">Visibility</label>
+        <input type="number" id="Visibility" name="Visibility" required>
+        <br><br>
+        <label for="Humidity">Humidity</label>
+        <input type="number" id="Humidity" name="Humidity" required>
+        <br><br>
+        <label for="Season__Autumn">Season__Autumn</label>
+        <input type="number" id="Season__Autumn" name="Season__Autumn" min="0" max="1" required step="1" required>
+        <br><br>
+        <label for="Month__9">Month__9</label>
+        <input type="number" id="Month__9" name="Month__9" min="0" max="1" required step="1" required>
+        <br><br>
+        <label for="Month__4">Month__4</label>
+        <input type="number" id="Month__4" name="Month__4" min="0" max="1" required step="1" required>
+        <br><br>
+        <label for="Wind speed">Wind speed</label>
+        <input type="number" id="Wind speed" name="Wind speed" min="0" required step="0.1" required>
+        <br><br>
+        <label for="year">year</label>
+        <input type="number" id="year" name="year" min="0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Month__5">Month__5</label>
+        <input type="number" id="Month__5" name="Month__5" min="0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Season__Summer">Season__Summer</label>
+        <input type="number" id="Season__Summer" name="Season__Summer" min="0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Month__3">Month__3</label>
+        <input type="number" id="Month__3" name="Month__3" min="0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Temperature">Temperature</label>
+        <input type="number" id="Temperature" name="Temperature" required step="0.1" required>
+        <br><br>
+        <label for="Is_snowing">Is_snowing</label>
+        <input type="number" name="Is_snowing" id="Is_snowing" min= "0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Season__Spring">Season__Spring</label>
+        <input type="number" name="Season__Spring" id="Season__Spring" min= "0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Month__6">Month__6</label>
+        <input type="number" name="Month__6" id="Month__6" min= "0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Month__2">Month__2</label>
+        <input type="number" name="Month__2" id="Month__2" min= "0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Solar Radiation">Solar Radiation</label>
+        <input type="number" name="Solar Radiation" id="Solar Radiation" min= "0" required step="0.01" required>
+        <br><br>
+        <label for="Holiday">Holiday</label>
+        <input type="number" name="Holiday" id="Holiday" min= "0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Is_raining">Is_raining</label>
+        <input type="number" name="Is_raining" id="Is_raining" min= "0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Month__1">Month__1</label>
+        <input type="number" name="Month__1" id="Month__1" min= "0" max = "1" required step="1" required>
+        <br><br>
+        <label for="Functioning Day">Functioning Day</label>
+        <input type="number" name="Functioning Day" id="Functioning Day" min= "0" max = "1" required step="1" required>
+        <br><br>
+        <button>Predict</button>
+    </form>
+</body>
+</html>
