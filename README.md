@@ -73,7 +73,7 @@ Random Forrest Regressor is used to predict the dependent variable which is cont
 How do they work?
 They build multiple decision trees from randomly sampled rows and columns of the dataset. This random sampling of the data is called bootstrap. After building multiple decision trees from the dataset they calculate the average of the values(in case of a regression problem) that have been predicted by all the decision trees. This process of calculating the average prediction by combining all the individual prediction values is called aggregation.
 
-## Deployed:
+## Deployment:
 
 I have used flask framework to build a website and used AWS EC2 to deploy it. Please find the application link below.
 
