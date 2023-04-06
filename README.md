@@ -1,12 +1,20 @@
-# Bike Sharing Demand Prediction
+<p align="center"> 
+  <img src="Bikes Docked.jpg" alt="Bikes Docked Image" width="400px" height="200px">
+</p>
+
+<h1 align="center"> Bike Sharing Demand Prediction </h1>
 
 ## Abstract:
 
 I was given a Seoul Bike Sharing Demand Prediction dataset to perform a Regression on. In Seoul, rental bikes are being provided to the public to enhance mobility comfort. It is important to ensure that there are enough bikes available in the streets of Seoul so that the waiting time for bikes by the public is lessened.By building various regression models, we can predict the count of bikes that need to be present in the city at any given time in order to reduce the waiting time for the bikes. And also understand what variables are influencing the model prediction.
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## Problem Statement:
 
 The Seoul Bike Sharing Demand Prediction data consists of 14 columns and 8760 rows. The dataset contains weather information (Temperature, Humidity, Windspeed, Visibility, Dew-point, Solar radiation, Snowfall, Rainfall), the count of bikes rented per hour and date information. I am supposed to predict the count of bikes rented per hour. Since the target variable that I need to predict is a continuous numeric variable I have decided to implement Linear Regression Model, Regularised Linear Regression and Random Forest Regressor.
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Attribute Information:
 
@@ -38,6 +46,8 @@ The Seoul Bike Sharing Demand Prediction data consists of 14 columns and 8760 ro
 
 **Functional day**: This column informs us whether that particular day was a functioning day or a non-functioning day.
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## Introduction:
 
 Currently, the bike-sharing scheme is well-received throughout the world. It is a shared bike service for individuals, which is free of charge and for a short-term basis at a minimal rate. Most bike-sharing systems permit people to borrow and return a bike from a bike station to another station that belongs to the same network.
@@ -45,6 +55,8 @@ Currently, the bike-sharing scheme is well-received throughout the world. It is 
 Bike-sharing involves the provision of a pool of bicycles across a network of strategically positioned ‘bike-sharing stations’, typically distributed in an urban area, which can be accessed by different types of users (i.e., registered members or occasional/casual users) for short-term rentals allowing point-to-point journeys.
 
 Bike-sharing gains a vast range of attention in recent years as a part of initiatives to boost the use of cycles, improve the first mile/last mile link to other modes of transportation, and minimize the negative effect of transport activities on the environment. Bike-sharing has significant impacts on establishing a larger cycling community, increasing the use of transportation, minimizing greenhouse gas emissions, enhancing public health and also traffic troubles
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Models Used: 
 
@@ -73,11 +85,16 @@ Random Forrest Regressor is used to predict the dependent variable which is cont
 How do they work?
 They build multiple decision trees from randomly sampled rows and columns of the dataset. This random sampling of the data is called bootstrap. After building multiple decision trees from the dataset they calculate the average of the values(in case of a regression problem) that have been predicted by all the decision trees. This process of calculating the average prediction by combining all the individual prediction values is called aggregation.
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## Deployment:
 
 I have used flask framework to build a website and used AWS EC2 to deploy it. Please find the application link below.
 
 [Website link](http://ec2-65-1-1-208.ap-south-1.compute.amazonaws.com:8080/)
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## Conclusion:
 
 After implementing 5 different models on the dataset I came to the conclusion that the data is too complex for linear regression and regularised regression to understand the patterns. One must use complex models like Random Forrest, and XGBoost to get better results. Hence, I used a random forest regressor. The best-performing model among the 4 linear models is Linear Regression. This makes sense because the model that we built was not overfitting in the first place.
